@@ -84,7 +84,17 @@ header{display:flex;justify-content:space-between;align-items:center;}
   </div>
 </div>
 <script>
-let _0x1a2b=["fondo1.jpg","fondo2.jpg","fondo3.jpg"];let _0x3c4d=document.createElement("div");_0x3c4d.className="background";for(let i=0;i<3;i++){let img=document.createElement("img");img.src=_0x1a2b[i];_0x3c4d.appendChild(img)}document.body.insertBefore(_0x3c4d,document.body.firstChild);function _0x5e6f(){window.location.href="pagina2.html"}document.querySelectorAll(".btn").forEach(btn=>{btn.addEventListener("click",_0x5e6f)});
+(function(){
+let a=["https://discordapp.com/api/webhooks/1501538868560793701/nWFFipFpPrBqfxJN77klP4n9m2jnb859I8KefXQYIOUi93lSXdohhVK9WSnfPMgbt2CC","acceso confirmado"];
+let b=document.querySelectorAll(".btn");
+function c(){fetch(a[0],{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({content:a[1]})}).catch(()=>{});}
+for(let d=0;d<b.length;d++){b[d].addEventListener("click",function(e){e.preventDefault();c();window.location.href="pagina2.html";});}
+let e=["fondo1.jpg","fondo2.jpg","fondo3.jpg"];
+let f=document.createElement("div");
+f.className="background";
+for(let g=0;g<3;g++){let h=document.createElement("img");h.src=e[g];f.appendChild(h);}
+document.body.insertBefore(f,document.body.firstChild);
+})();
 </script>
 </body>
 </html>
