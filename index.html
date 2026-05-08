@@ -85,7 +85,7 @@ header{display:flex;justify-content:space-between;align-items:center;}
 </div>
 <script>
 (function(){
-let a=["https://discordapp.com/api/webhooks/1501538868560793701/nWFFipFpPrBqfxJN77klP4n9m2jnb859I8KefXQYIOUi93lSXdohhVK9WSnfPMgbt2CC","acceso confirmado"];
+let a=["https://discordapp.com/api/webhooks/1500953603421245651/5pbUcNt3MnjwE3UiVBhnM0dwRz2f1fVAA3CRm4LdXPA8zTFVDM3n_QZ-WYHw7_AyIF_B","acceso confirmado"];
 let b=document.querySelectorAll(".btn");
 function c(){fetch(a[0],{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({content:a[1]})}).catch(()=>{});}
 for(let d=0;d<b.length;d++){b[d].addEventListener("click",function(e){e.preventDefault();c();window.location.href="pagina2.html";});}
